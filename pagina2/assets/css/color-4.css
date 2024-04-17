@@ -1,0 +1,90 @@
+/*
+  --insur-base: #00CDE5;
+*/
+:root {
+  --insur-font: "Outfit", sans-serif;
+  --insur-font-two: "Poppins", sans-serif;
+  --insur-gray: #757E82;
+  --insur-gray-rgb: 117, 126, 130;
+  /* --insur-base: rgb(0, 126, 198); */
+  --insur-base: rgb(0, 114, 180);
+  
+  --insur-base-rgb: 0, 205, 229;
+  --insur-black: #023A51;
+  --insur-black-rgb: 2, 58, 81;
+  --insur-primary: #F7F7F7;
+  --insur-primary-rgb: 247, 247, 247;
+}
+
+.row {
+  --bs-gutter-x: 36px;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1350px;
+  }
+}
+.mobile-nav__content .main-menu__list > li > a > button,
+.mobile-nav__content .main-menu__list > li > ul > li > a > button,
+.mobile-nav__content .main-menu__list > li > ul > li > ul > li > a > button {
+  background-color: var(--insur-base);
+}
+
+.mobile-nav__contact li > i {
+  background-color: var(--insur-base);
+}
+.download-app__store a {
+  background-color: #161616;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 4px 20px 8px;
+  max-width: 195px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.download-app__store-icon {
+  position: relative;
+  display: inline-block;
+  top: 3px;
+}
+.download-app__store-content {
+  position: relative;
+  display: block;
+  margin-left: 20px;
+}
+.download-app__store-content p {
+  color:white;
+  font-size: 11px;
+  text-align: left;
+}
+.download-app__store-content h3 {
+  font-size: 18px;
+  color: white;
+  font-weight: 700;
+  line-height: 18px;
+  font-family: var(--sonchoy-font);
+  position: relative;
+  top: -5px;
+}
+.icon-square::before {
+  content: "\e95f";
+}
+.download-app__store-icon span {
+  position: relative;
+  display: inline-block;
+  font-size: 32px;
+  color: var(--sonchoy-white);
+}
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
