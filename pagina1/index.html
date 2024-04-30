@@ -1040,7 +1040,7 @@
 
 
 </body>
-<script>
+<!-- <script>
     window.addEventListener('scroll', function () {
         var redesSociales = document.querySelector('.redes-sociales');
         var scrollY = window.scrollY;
@@ -1051,7 +1051,7 @@
             redesSociales.classList.remove('scrolled');
         }
     });
-</script>
+</script> -->
 <style>
     @import url('http://weloveiconfonts.com/api/?family=entypo');
     @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
@@ -1069,9 +1069,18 @@
         left: 0;
         transform: translateY(-50%);
         transition: transform 0.3s ease;
-        /* Agregamos una transición suave al transform */
-        z-index: 999;
-        /* Asegura que esté encima de otros elementos */
+
+ 
+
+    
+        bottom: 40px;
+        right: 40px;
+        z-index: 99;
+        text-align: center;
+        -webkit-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+        display: none;
+        border-radius: 0;
     }
 
     .scrolled {
@@ -1139,28 +1148,37 @@
     .redes-sociales .spotify:hover {
         background: rgba(39, 174, 96, 1);
     }
+
     .redes-sociales .instagram {
         background: rgba(201, 10, 120, 0.16);
-        border-color: #c70073;;
-        color: #c70073;;
+        border-color: #c70073;
+        ;
+        color: #c70073;
+        ;
     }
 
     .redes-sociales .linkedin:hover {
         background: rgba(41, 128, 185, 0.49)
     }
+
     .redes-sociales .linkedin {
         background: rgba(199, 0, 115, 0.1);
-        border-color: #2980b9;;
-        color: #2980b9;;
+        border-color: #2980b9;
+        ;
+        color: #2980b9;
+        ;
     }
 
     .redes-sociales .instagram:hover {
         background: rgba(230, 34, 34);
     }
+
     .redes-sociales .youtube {
         background: rgba(199, 0, 115, 0.1);
-        border-color: #e62222;;
-        color: #e62222;;
+        border-color: #e62222;
+        ;
+        color: #e62222;
+        ;
     }
 
     .redes-sociales .youtube:hover {

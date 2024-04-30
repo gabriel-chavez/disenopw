@@ -283,19 +283,20 @@
   }
 
 
-  if ($(".scroll-to-target").length) {
-    $(".scroll-to-target").on("click", function () {
-      var target = $(this).attr("data-target");
-      // animate
-      $("html, body").animate({
-          scrollTop: $(target).offset().top
-        },
-        1000
-      );
+  // if ($(".scroll-to-target").length) {
+  //   $(".scroll-to-target").on("click", function () {
+  //     var target = $(this).attr("data-target");
+  //     // animate      
+  //     $("html, body").animate({
+        
+  //         scrollTop: $(target).offset().top
+  //       },
+  //       500
+  //     );
 
-      return false;
-    });
-  }
+  //     return false;
+  //   });
+  // }
 
 
   if ($(".contact-form-validated").length) {
@@ -1112,12 +1113,20 @@
         stricky.removeClass("stricky-fixed");
       }
     }
-    if ($(".scroll-to-top").length) {
+    // if ($(".scroll-to-top").length) {
+    //   var strickyScrollPos = 100;
+    //   if ($(window).scrollTop() > strickyScrollPos) {
+    //     $(".scroll-to-top").fadeIn(500);
+    //   } else if ($(this).scrollTop() <= strickyScrollPos) {
+    //     $(".scroll-to-top").fadeOut(500);
+    //   }
+    // }
+    if ($(".scroll-to-top").length || $(".redes-sociales").length) {
       var strickyScrollPos = 100;
       if ($(window).scrollTop() > strickyScrollPos) {
-        $(".scroll-to-top").fadeIn(500);
+        $(".scroll-to-top, .redes-sociales").fadeIn(500);
       } else if ($(this).scrollTop() <= strickyScrollPos) {
-        $(".scroll-to-top").fadeOut(500);
+        $(".scroll-to-top, .redes-sociales").fadeOut(500);
       }
     }
 
