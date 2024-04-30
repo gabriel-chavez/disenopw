@@ -188,15 +188,16 @@
                     <div class="main-slider-three__shape-5 zoominout"></div>
                     <div class="container">
                         <div class="main-slider-three__content">
-                            <h2 class="main-slider-three__title">Proteccion creada<br> para  <span
+                            <h2 class="main-slider-three__title">Proteccion creada<br> para <span
                                     class="main-slider-three__color-text">Usted</span> <br>
                                 <span class="main-slider-three__color-text-two">y toda</span> su <br>
                                 Familia
                             </h2>
-                            <p class="main-slider-three__text">Consiste en otorgar un apoyo económico a la familia del asegurado <br> ante el fallcimiento del mismo por cualquier causa</p>
+                            <p class="main-slider-three__text">Consiste en otorgar un apoyo económico a la familia del
+                                asegurado <br> ante el fallcimiento del mismo por cualquier causa</p>
                             <div class="main-slider-three__btn-and-text-box">
                                 <a href="about.html" class="main-slider-three__btn thm-btn">Más información</a>
-                               
+
                             </div>
                         </div>
                     </div>
@@ -221,12 +222,13 @@
                             <h2 class="main-slider-three__title">Protege <br> tu <span
                                     class="main-slider-three__color-text">Futuro</span> <br>
                                 <span class="main-slider-three__color-text-two">con</span> nosotros <br>
-                                
+
                             </h2>
-                            <p class="main-slider-three__text">Consiste en otorgar un apoyo económico a la familia del asegurado <br> ante el fallcimiento del mismo por cualquier causa</p>
+                            <p class="main-slider-three__text">Consiste en otorgar un apoyo económico a la familia del
+                                asegurado <br> ante el fallcimiento del mismo por cualquier causa</p>
                             <div class="main-slider-three__btn-and-text-box">
                                 <a href="about.html" class="main-slider-three__btn thm-btn">Más información</a>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -1012,8 +1014,220 @@
 
     <!-- template js -->
     <script src="assets/js/sonchoy.js"></script>
-</body>
 
+
+    <div class="redes-sociales">
+        <ul>
+            <!-- <li>
+                <a href="#" class="spotify"><span>whastapp</span><i class="bi bi-whatsapp"></i></a>
+            </li> -->
+            <li>
+                <a href="#" class="linkedin"><span>linkedin</span><i class="bi bi-linkedin"></i></a>
+            </li>
+            <li>
+                <a href="#" class="youtube"><span>Youtube</span><i class="bi bi-youtube"></i></a>
+            </li>
+            <li>
+                <a href="#" class="skype"><span>Facebook</span><i class="bi bi-facebook"></i></a>
+            </li>
+            <li>
+                <a href="#" class="instagram"><span>Instagram</span><i class="bi bi-instagram"></i></a>
+            </li>
+        </ul>
+
+    </div>
+
+
+
+</body>
+<script>
+    window.addEventListener('scroll', function () {
+        var redesSociales = document.querySelector('.redes-sociales');
+        var scrollY = window.scrollY;
+
+        if (scrollY > 100) { // Puedes ajustar este valor según cuando quieras que ocurra el efecto
+            redesSociales.classList.add('scrolled');
+        } else {
+            redesSociales.classList.remove('scrolled');
+        }
+    });
+</script>
+<style>
+    @import url('http://weloveiconfonts.com/api/?family=entypo');
+    @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+    *,
+    *:before,
+    *:after {
+        box-sizing: border-box;
+    }
+
+
+    .redes-sociales {
+        position: fixed;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        transition: transform 0.3s ease;
+        /* Agregamos una transición suave al transform */
+        z-index: 999;
+        /* Asegura que esté encima de otros elementos */
+    }
+
+    .scrolled {
+        transform: translateY(-70%);
+        /* Cambiamos la posición al desplazar */
+    }
+
+    .redes-sociales ul {
+        list-style: none;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translateY(-50%);
+        left: -34px;
+        z-index: 100
+    }
+
+    .redes-sociales ul li a {
+        display: block;
+        margin-left: -2px;
+        height: 60px;
+        width: 60px;
+        border-radius: 0 25px 25px 0;
+        border: 2px solid #000;
+        background: #FFF;
+        margin-bottom: 1em;
+        transition: all .4s ease;
+        color: #2980b9;
+        text-decoration: none;
+        line-height: 60px;
+        position: relative;
+    }
+
+    .redes-sociales ul li a:hover {
+        cursor: pointer;
+        width: 180px;
+        color: #fff;
+    }
+
+    .redes-sociales ul li a:hover span {
+        left: 0;
+    }
+
+    .redes-sociales ul li a span {
+        padding: 0 30px 0 15px;
+        position: absolute;
+        left: -120px;
+        transition: left .4s ease;
+    }
+
+    .redes-sociales ul li a i {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        font-size: 1.5em;
+    }
+
+    .redes-sociales .spotify {
+        background: rgba(39, 174, 96, .1);
+        border-color: #27ae60;
+        color: #27ae60;
+    }
+
+    .redes-sociales .spotify:hover {
+        background: rgba(39, 174, 96, 1);
+    }
+    .redes-sociales .instagram {
+        background: rgba(201, 10, 120, 0.16);
+        border-color: #c70073;;
+        color: #c70073;;
+    }
+
+    .redes-sociales .linkedin:hover {
+        background: rgba(41, 128, 185, 0.49)
+    }
+    .redes-sociales .linkedin {
+        background: rgba(199, 0, 115, 0.1);
+        border-color: #2980b9;;
+        color: #2980b9;;
+    }
+
+    .redes-sociales .instagram:hover {
+        background: rgba(230, 34, 34);
+    }
+    .redes-sociales .youtube {
+        background: rgba(199, 0, 115, 0.1);
+        border-color: #e62222;;
+        color: #e62222;;
+    }
+
+    .redes-sociales .youtube:hover {
+        background: rgba(230, 34, 34);
+    }
+
+    .redes-sociales .skype {
+        background: rgba(34, 167, 240, .1);
+        border-color: #22A7F0;
+        color: #22A7F0;
+    }
+
+    .redes-sociales .skype:hover {
+        background: rgba(34, 167, 240, 1);
+    }
+
+    .redes-sociales .dribbble {
+        background: rgba(210, 82, 127, .1);
+        border-color: #D2527F;
+        color: #D2527F;
+    }
+
+    .redes-sociales .dribbble:hover {
+        background: rgba(210, 82, 127, 1);
+    }
+
+    /* entypo */
+
+    .redes-sociales [class*="entypo-"]:before {
+        font-family: 'entypo', sans-serif;
+    }
+
+    .redes-sociales div {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -60%);
+    }
+
+    .redes-sociales div h1 {
+        font-weight: 600;
+        font-size: 2.4em;
+        color: #303030;
+        margin-bottom: .5em;
+    }
+
+    .redes-sociales div p {
+        color: #999;
+        font-weight: 400;
+        font-size: 1.2em;
+    }
+
+    .redes-sociales div a {
+        color: #4183D7;
+        text-decoration: none;
+        font-weight: 600;
+        padding-bottom: 2px;
+        border-bottom: 2px dotted #4183D7;
+        transition: all .25s ease;
+    }
+
+    .redes-sociales div a:hover {
+        color: #D2527F;
+        border-color: #D2527F;
+    }
+</style>
 
 <!-- Mirrored from thememxpro.com/html/sonchoy/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 16 Apr 2024 06:13:09 GMT -->
 
